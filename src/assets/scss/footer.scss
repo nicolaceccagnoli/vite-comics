@@ -11,12 +11,33 @@ footer {
         @include container;
         @include footer-display-flex;
 
+
         #footer-list-container {
+            width: $footer-list-wd;
+            padding: 30px 0;
             @include footer-list-display-flex;
 
-            h4 {
-            color: white; 
+            div {
+                margin-right: 40px;
+                @include footer-list-div-d-flex;
+
+                h4 {
+                    color: white;
+                    }
+
+                    li {
+                        list-style: $general-list-style;
+
+                        a {
+                            text-decoration: $general-a-text-decoration;
+                            color: #959595;
+                            font-size: 0.7rem
+                        }
+                }
+
             }
+
+
         }
 
         #big-logo-container {
@@ -32,6 +53,7 @@ footer {
             background-color: $footer-bottom-bg;
             display: flex;
             align-items: center;
+            padding: $footer-bottom-padding;
 
             #footer-bottom-container{
                 @include container;
@@ -40,6 +62,7 @@ footer {
 
             button {
                 @include footer-bottom-button;
+                cursor: pointer;
             }
 
             #social-links {
@@ -47,11 +70,16 @@ footer {
                 display: flex;
                 align-items: center;
 
+                span {
+                    color: $span-color;
+                    font-size: 20px;
+                }
+
                 ul {
                     display: flex;
                     li {
                         list-style: $general-list-style;
-                        margin-left: 10px;
+                        margin-left: 15px;
                     }
                 }
                 

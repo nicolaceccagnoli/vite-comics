@@ -49,8 +49,15 @@
 
 @mixin footer-list-display-flex {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin footer-list-div-d-flex {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
 }
 
 @mixin footer-img-logo {
@@ -65,9 +72,9 @@
 }
 
 @mixin footer-bottom-button {
-    padding: 10px;
+    padding: 12px;
     border: 2px solid #0482F9;
     color: #fff;
     background: none;
-
+    font-size: 18px;
 }
