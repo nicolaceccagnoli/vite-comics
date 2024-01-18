@@ -52,7 +52,18 @@
                 bigLogo: {
                     path: 'public/img/dc-logo-bg.png',
                     name: 'DC Logo'
-                }
+                },
+
+                button: 'SIGN-UP NOW!',
+
+                socialLinks: [
+                    'public/img/footer-facebook.png',
+                    'public/img/footer-twitter.png',
+                    'public/img/footer-youtube.png',
+                    'public/img/footer-pinterest.png',
+                    'public/img/footer-periscope.png'
+                ]
+
             };
         },
         methods: {
@@ -73,7 +84,7 @@
                     <ul>
                         <li v-for="(link, i) in footerTopLists.links">
                             <a href="#">
-                                {{ footerTopLists.links[i].link }}
+                                {{ footerTopLists.links[i].link[activeLink] }}
                             </a>
                         </li>
                     </ul>
@@ -84,7 +95,26 @@
             </div>
         </section>
         <section id="footer-bottom"> 
-            
+            <div id="footer-bottom-container">
+                <div>
+                    <button>
+                        {{ button }}
+                    </button>
+                </div>
+
+                <div id="social-links">
+                    <span href="#">
+                        FOLLOW US
+                    </span>
+                    <ul>
+                        <li v-for="socialLink in socialLinks">
+                            <a href="#">
+                                <img :src="socialLink" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
     </footer>

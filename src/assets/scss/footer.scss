@@ -5,27 +5,57 @@ footer {
     background-image: url(/public/img/footer-bg.jpg);
     height: $footer-hg;
     background-size: cover;
-}
+    
 
-#footer-top {
-    @include container;
-    @include footer-display-flex;
+        #footer-top {
+        @include container;
+        @include footer-display-flex;
 
-    #footer-list-container {
-        @include footer-list-display-flex;
+        #footer-list-container {
+            @include footer-list-display-flex;
 
-        h4 {
-          color: white; 
+            h4 {
+            color: white; 
+            }
         }
-    }
 
-    #big-logo-container {
+        #big-logo-container {
 
-        @include footer-img-logo;
-        height: $footer-hg;
-
-        img {
+            @include footer-img-logo;
+            height: $footer-hg;
             overflow: hidden;
+
         }
     }
+
+        #footer-bottom {
+            background-color: $footer-bottom-bg;
+            display: flex;
+            align-items: center;
+
+            #footer-bottom-container{
+                @include container;
+                @include footer-bottom-display-flex;
+            }
+
+            button {
+                @include footer-bottom-button;
+            }
+
+            #social-links {
+
+                display: flex;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    li {
+                        list-style: $general-list-style;
+                        margin-left: 10px;
+                    }
+                }
+                
+            }
+        }
 }
+
