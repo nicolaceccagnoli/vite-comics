@@ -3,17 +3,20 @@
         data() {
             return {
                 navbar: {
+
                     links: [
-                    'CHARACTERS',
-                    'COMICS',
-                    'MOVIES',
-                    'TV',
-                    'GAMES',
-                    'COLLECTIBLES',
-                    'VIDEOS',
-                    'FANS',
-                    'NEWS',
-                    'SHOP'
+
+                        'CHARACTERS',
+                        'COMICS',
+                        'MOVIES',
+                        'TV',
+                        'GAMES',
+                        'COLLECTIBLES',
+                        'VIDEOS',
+                        'FANS',
+                        'NEWS',
+                        'SHOP'
+
                     ],
 
                     logo: '/img/dc-logo.png'
@@ -23,6 +26,7 @@
 
             };
         },
+        
         methods: {
 
         }
@@ -48,5 +52,5 @@
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/header.scss';
+@use '../assets/scss/header';
 </style>

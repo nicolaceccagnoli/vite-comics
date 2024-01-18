@@ -1,15 +1,13 @@
-$logo-width: 80px;
-$header-bg-color: #fff;
-$header-hg: 200px;
-
+@use '../scss/partials/variables' as *;
 @use '../scss/partials/mixins' as *;
 
 header {
-    width: 100vw;
     background-color: $header-bg-color;
-    height: $header-hg;
-    font-size: 16px;
+    // height: $header-hg;
+    padding: $header-padding;
+    font-size: 14px;
     @include header-display-flex;
+    @include container;
 
     img {
         width: $logo-width;
@@ -19,14 +17,13 @@ header {
         #menu-list {
             display: flex;
             li {
-                list-style: none;
+                list-style: $general-list-style;
                 a {
-                    text-decoration: none;
+                    text-decoration: $general-a-text-decoration;
                     color: black;
-                    margin-right: 20px;
-                    margin-right: 20px;
+                    margin-left: 20px;
 
-                    a:active {
+                    &:hover {
                         color: #0482F9;
                     }
                 }

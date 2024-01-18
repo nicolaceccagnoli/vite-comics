@@ -1,7 +1,18 @@
 @use 'partials/variables.scss' as *;
 @use 'partials/mixins.scss' as *;
 
-h1 {
-    text-align: center;
-    color: lightblue;
+main {
+    background-color: $main-section-one-bg;
+
+    #content {
+        @include container;
+
+        padding: $main-padding;
+        font-size: 24px;
+        
+        a {
+            text-decoration: $a-text-decoration;
+            color: white;
+        }   
+    }
 }

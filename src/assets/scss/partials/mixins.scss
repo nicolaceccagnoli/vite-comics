@@ -1,5 +1,33 @@
+/*
+
+    GENERALS MIXINS
+
+*/
+
+@mixin container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*
+
+    HEADER MIXINS
+
+*/
+
+
+
 @mixin header-display-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
+
+/*
+
+    MAIN MIXINS
+
+*/
+
