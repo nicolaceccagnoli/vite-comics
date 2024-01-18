@@ -20,7 +20,7 @@
                     ],
 
                     logo: '/img/dc-logo.png'
-
+                    
             }
 
 
