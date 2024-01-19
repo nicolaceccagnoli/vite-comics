@@ -136,6 +136,9 @@
                 :path="comic.thumb"
                 :currentSeries="comic.series" />
             </div>
+            <button>
+                    LOAD MORE
+            </button>
         </section>
         <section id="shop">
             <ul>

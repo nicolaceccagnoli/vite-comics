@@ -43,6 +43,16 @@
     flex-wrap: wrap;
 }
 
+@mixin comic-container-button {
+    background-color: #0482F9;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /*
 
     FOOTER MIXINS
