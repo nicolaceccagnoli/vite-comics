@@ -4,16 +4,18 @@
 main {
     background-color: $main-section-one-bg;
 
+    #jumbotron {
+        width: 100%;
+        height: 400px;
+        background-image: url(./public/img/jumbotron.jpg);
+        background-position: top;
+
+    }
+
     #content {
         @include container;
-
-        padding: $main-section-one-padding;
-        font-size: 24px;
+        min-height: 500px;
         
-        a {
-            text-decoration: $general-a-text-decoration;
-            color: white;
-        }   
     }
 
     #shop {
@@ -52,9 +54,5 @@ main {
                 }
             }
 
-    }
-
-    #jumbotron {
-        @include container;
     }
 }

@@ -1,4 +1,7 @@
 <script >
+
+    import AppMainComics from './AppMainComics.vue';
+
     export default {
         data() {
             return {
@@ -35,6 +38,9 @@
                 ] 
             };
         },
+        components :{
+            AppMainComics
+        },
         methods: {
 
         }
@@ -44,16 +50,14 @@
 
 <template>
     <main>
-        <section id="content">
-            <a href="#">
-                <i class="fa-solid fa-arrow-right-long"></i>
-                    {{ contentSection.contentLinkString }} 
-                <i class="fa-solid fa-arrow-left-long"></i>
-            </a>
+        <section id="big-comic-container">
+            <div id="jumbotron">
+            </div>
+                <AppMainComics />
         </section>
         <section id="shop">
             <ul>
-                <li v-for="(shop, i) in shopSection">
+                <li v-for="(shop, i) in shopSection" :key="i">
                     <div class="shop-icons">
                         <img :src="shop.path" :alt="shop.name">
                         <a href="#"> {{ shop.name }}</a>
@@ -65,5 +69,5 @@
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/main'
+@use '../assets/scss/main';
 </style>
