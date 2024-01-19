@@ -131,6 +131,10 @@
             <div id="jumbotron">
             </div>
             <div id="content">
+                <div class="current-menu-flag">
+                CURRENT SERIES
+                </div>
+
                 <singleComic v-for="(comic, i) in comics"
                 :key="i"
                 :path="comic.thumb"

@@ -19,6 +19,12 @@ main {
         #content {
             @include container;
             @include main-content-flex;
+            
+            .current-menu-flag {
+                @include main-current-menu-flag;
+            }
+            
+            position: relative;
             padding: 50px 0;
 
             .single-comic {

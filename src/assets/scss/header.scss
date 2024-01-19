@@ -19,28 +19,28 @@ header {
             display: flex;
             li {
                 list-style: $general-list-style;
+                position: relative;
                 a {
                     text-decoration: $general-a-text-decoration;
                     color: black;
                     margin-left: 20px;
 
-                    &:hover {
+                    &:hover, &.active {
                         color: #0482F9;
                     }
                 }
 
-                &:nth-of-type(2) a.active {
+                &:nth-of-type(2), & a.active {
                     color: $main-color;
-                    position: relative;
                 }
 
-                &:nth-of-type(2) a.active::before {
+                & a.active::before, & a:hover::before{
                     content: '';
                     position: absolute;
                     background-color: $main-color;
                     height: 5px;
                     width: 100%;
-                    left: 0;
+                    left: 10px;
                     top: 69px;
                 }
 

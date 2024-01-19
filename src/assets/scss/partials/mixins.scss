@@ -43,6 +43,18 @@
     flex-wrap: wrap;
 }
 
+@mixin main-current-menu-flag {
+    color: white;
+    position: absolute;
+    top: -25px;
+    width: 250px;
+    height: 50px;
+    background-color: #0482F9;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 48px;
+}
+
 @mixin comic-container-button {
     background-color: #0482F9;
     color: white;
