@@ -37,6 +37,12 @@
     align-items: center;
 }
 
+@mixin main-content-flex {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*
 
     FOOTER MIXINS
