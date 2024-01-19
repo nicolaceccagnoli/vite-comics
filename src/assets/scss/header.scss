@@ -29,12 +29,12 @@ header {
                     }
                 }
 
-                &:nth-of-type(2) a {
+                &:nth-of-type(2) a.active {
                     color: $main-color;
                     position: relative;
                 }
 
-                &:nth-of-type(2) a::before {
+                &:nth-of-type(2) a.active::before {
                     content: '';
                     position: absolute;
                     background-color: $main-color;
